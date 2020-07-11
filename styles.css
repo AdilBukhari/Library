@@ -149,13 +149,13 @@ label {
 
 .read-true {
     background-color: green;
-    background-image: url('./images/read.png');
+    background-image: url("./images/read.png");
     background-size: cover;
 }
 
 .read-false {
     background-color: red;
-    background-image: url('./images/not-read.png');
+    background-image: url("./images/not-read.png");
     background-size: cover;
 }
 
@@ -163,6 +163,6 @@ label {
     height: 25px;
     width: 25px;
     border: 0 solid black;
-    background-image: url('./images/delete.png');
+    background-image: url("./images/delete.png");
     background-size: cover;
 }
