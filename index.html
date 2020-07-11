@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library</title>
+
+        <script src="/script.js" defer></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">LIBRARY</h1>
+            <button id='add'>+</button>
+        </header>
+        
+        <div id="input-pop-up" style="display: none;">
+            <form id="new-book" autocomplete="off">
+                <label for="book-title">Title</label>
+                <input class="text-input" type="text" id="book-title" name="book-title">
+
+                <label for="author">Author</label>
+                <input class="text-input" type="text" id="author" name="author">
+
+                <label for="pages">Pages</label>
+                <input class="text-input" type="text" id="pages" name="pages">
+
+                <label for="read">Read?</label>
+                <div id="read">
+                    <label for="yes">Yes</label>
+                    <input id="yes" name="read" type="radio" value="yes">
+
+                    <label for="no">No</label>
+                    <input id="no" name="read" type="radio" value="no">
+                </div>
+
+                <button id="add-button" type="button">ADD BOOK</button>
+            </form>
+        </div>
+
+        <div id="book-list">
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Pages</th>
+                <th scope="col">Read</th>
+                <th scope="col" class="remove">Remove</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+
+        </div>
+    </body>
+</html>

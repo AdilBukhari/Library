@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+
+body {
+    margin: 0;
+    background-color: #4d4d4d;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: #313131;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    letter-spacing: 1.3px;
+    margin-left: 150px;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ff7f7f;
+    border-radius: 100%;
+    margin-right: 200px;
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    padding: 0 7px 5px 7px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:hover {
+    transform: scale(1.05) perspective(1px)
+}
+
+#input-pop-up {
+    height: 550px;
+    background-color: #313131;
+    justify-content: center;
+    display: none;
+}
+
+#new-book {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    width: 50%;
+}
+
+.text-input {
+    width: 100%;
+    line-height: 35px;
+    outline: none;
+    border: 0px solid;
+    border-radius: 0.5em;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+label {
+    color: white;
+    align-self: flex-start;
+}
+
+#read {
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+#yes {
+    margin-right: 10px;
+}
+
+#add-button {
+    background-color: #ff7f7f;
+    color: white;
+    border-radius: 0.5em;
+    font-size: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 110px;
+    border: 0;
+}
+
+#add-button:hover {
+    transform: scale(1.05) perspective(1px)
+}
+
+#add-button:focus {
+    outline: none;
+    box-sizing: none;
+}
+
+#book-list {
+    margin-top: 50px;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th {
+    border-color: #ff7f7f;
+    color: #ff7f7f;
+}
+
+.table>tbody>tr>td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    border-color: #ff7f7f;
+    color: white;
+}
+
+.table>tbody>tr>th {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.remove {
+    width: 91px;
+}
+
+.read-buttons {
+    height: 25px;
+    width: 25px;
+    border: 0 solid black;
+}
+
+.read-true {
+    background-color: green;
+    background-image: url(images/read.png);
+    background-size: cover;
+}
+
+.read-false {
+    background-color: red;
+    background-image: url(images/not-read.png);
+    background-size: cover;
+}
+
+.delete-button {
+    height: 25px;
+    width: 25px;
+    border: 0 solid black;
+    background-image: url(images/delete.png);
+    background-size: cover;
+}
